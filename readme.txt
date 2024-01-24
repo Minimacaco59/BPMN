@@ -1,0 +1,20 @@
+se positionner dans le repertoire : my-node-api
+docker build -t my-node-api .
+docker run -p 3000:3000 my-node-api
+
+fakesmtp :
+soit double clic sur le fichier : fakeSMTP-2.0.jar
+soit via la ligne de commande : java -jar fakeSMTP-2.0.jar
+
+
+pour faire fonctionner mon process il faut :
+1. avoir lancer fakesmtp avec comme port d'ecoute 2525
+2. avoir lancer le contenaire docker qui contient les 2 APIs 
+
+Ensuite déroulement : 
+employe : walter.bates 
+Manageur : helen.kelly
+Comptable : favio.riviera
+
+password pour chaque compte BPMN 
+

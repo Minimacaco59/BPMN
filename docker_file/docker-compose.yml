@@ -1,0 +1,13 @@
+version: '3'
+services:
+  my-node-api:
+    build:
+      context: ../my-node-api
+    ports:
+      - "3000:3000"  # Port de votre API
+
+  fakesmtp:
+    image: djfarrelly/maildev
+    ports:
+      - "1080:1080"  # Port Web pour visualiser les emails
+      - "25:25"      # Port SMTP pour recevoir les emails
