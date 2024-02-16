@@ -11,7 +11,7 @@ soit via la ligne de commande :java -jar fakeSMTP-2.0.jar
 ensuite démarrer le serveur
 
 bontiasoft:
-importer le projet  : Bonitasoft\gestion-note-de-frais_20240124_1331.bos
+importer le projet  : Bonitasoft\gestion-note-de-frais_20240216_1506.bos
 
 pour faire fonctionner mon process il faut :
 1. avoir lancer fakesmtp avec comme port d'ecoute 2525
