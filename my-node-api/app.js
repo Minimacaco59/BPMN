@@ -60,7 +60,7 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
  * @swagger
  * /api/notedefrais:
  *   post:
- *     summary: Api qui simule la vérification de certaine régle métier ici on verifier que le montant est différent de 0
+ *     summary: API qui simule la vérification de certaines règles métier . Ici, on vérifie que le montant est différent de 0.
  *     requestBody:
  *       content:
  *         application/json:
@@ -73,13 +73,13 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 app.post('/api/notedefrais', (req, res) => {
   const notedefrais = req.body;
 
-  // Faites ce que vous voulez avec les données notedefrais ici
+  
   console.log('Reçu un JSON notedefrais :', notedefrais);
 
-  // Modifiez la propriété 'verifier' en fonction de la condition spécifiée
+  
   notedefrais.verifier = notedefrais.depenseMontant !== null && notedefrais.depenseMontant !== 0;
 
-  // Vous pouvez également renvoyer une réponse au client
+  
   res.json(notedefrais);
 });
 
@@ -87,7 +87,7 @@ app.post('/api/notedefrais', (req, res) => {
  * @swagger
  * /api/SAP:
  *   post:
- *     summary: Vérifie si l'utilisateur est bien connu dans SAP et si oui mets la variable integrer à vrai
+ *     summary: Vérifie si l'utilisateur est bien connu dans SAP. Si oui, met la variable 'intégrer' à vrai.
  *     requestBody:
  *       content:
  *         application/json:
@@ -108,7 +108,6 @@ app.post('/api/SAP', (req, res) => {
     notedefrais.integer = true;
   }
 
-  // Vous pouvez également renvoyer une réponse au client
   res.json(notedefrais);
 });
 
