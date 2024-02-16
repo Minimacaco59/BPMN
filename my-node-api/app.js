@@ -102,8 +102,8 @@ app.post('/api/notedefrais', (req, res) => {
 app.post('/api/SAP', (req, res) => {
   const notedefrais = req.body;
 
-  // Vérifier si idEmployee est égal à 204
-  if (notedefrais.idEmployee === 204) {
+  // Vérifier si idEmployee est égal à 301
+  if (notedefrais.idEmployee === 301) {
     // Modifier la valeur de integer à true
     notedefrais.integer = true;
   }

@@ -7,7 +7,7 @@ http://localhost:3000/api-docs/
 
 fakesmtp :
 soit double clic sur le fichier : fakeSMTP-2.0.jar
-soit via la ligne de commande : java -jar fakeSMTP-2.0.jar
+soit via la ligne de commande :java -jar fakeSMTP-2.0.jar 
 ensuite démarrer le serveur
 
 bontiasoft:
